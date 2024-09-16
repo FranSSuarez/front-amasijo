@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestión de Eventos</title>
+    <link rel="stylesheet" type="text/css" href="gestion-aventos.css">
+</head>
+
+<body>
+    <main class="cards" id="events_cards">
+        <section class="cards__header">
+            <h1>Gestión de Eventos</h1>
+            <input type="text" id="search" placeholder="Buscar eventos...">
+        </section>
+        <section class="cards__body">
+            <div class="card" data-id="1">
+                <img src="event1.jpg" alt="Imagen del evento 1" class="card__image">
+                <h2>Título del Evento 1</h2>
+                <p><strong>Fecha:</strong> 17 Dec, 2022</p>
+                <p><strong>Marca:</strong> Marca del Evento 1</p>
+                <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente quaerat eum. 
+                    Sint quos debitis enim facere porro eaque, dolores veritatis unde iste minus laudantium adipisci delectus, mollitia, beatae ad.</p>
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Eliminar</button>
+            </div>
+            <!-- Add more cards as needed -->
+        </section>
+        <section class="add-event">
+            <h2>Agregar Nuevo Evento</h2>
+            <form id="add-event-form">
+                <input type="text" id="event-title" placeholder="Título del evento" required>
+                <input type="date" id="event-date" required>
+                <input type="text" id="event-brand" placeholder="Marca del evento" required>
+                <textarea id="event-description" placeholder="Descripción del evento" required></textarea>
+                <input type="file" id="event-image" accept="image/*" required>
+                <button type="submit">Agregar Evento</button>
+            </form>
+        </section>
+    </main>
+    <script src="gestion-eventos.js"></script>
+</body>
+
+</html>

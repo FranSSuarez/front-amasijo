@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.form {
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-bg {
+    margin-top: -120px;
+    margin-left: -14px;
+    padding: 0%;
+    background-image: url(imagenprueba.jpg);
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    background-size: 100% 100%;
+    width: 110%;
+    height: 1100px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    font-family: garamond;
+    font-size: 121%;
+    text-align: center;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(57,72,60, 0.7);
+    width: 300px; 
+    height: 270px;
+    padding: 58px;
+    display:block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+button {
+    font-family: garamond;
+    font-size: medium;
+    width: 50%;
+    padding: 10px;
+    margin: 15px;
+    background-color: rgba(122, 168, 140, 0.4);
+    color: #000000;
+    border: #2f4f4f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.loginbt:hover {
+    background-color: rgba(51,65,54,0.45);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+input {
+    font-family: garamond;
+    font-size: large;
+    margin: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    border: rgba(204, 204, 204,0.5);
+    border-radius: 5px;
+}
+
+.pw-input {
+    padding-right: 10px;
+}
+
+.pw-eyeclo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 61px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+}
+.pw-eyeop {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 61px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 0;
+}
+
+.pw-eyeclo:hover{
+    opacity: 0;
+}
+
+.pw-eyeclo:hover + .pw-eyeop {
+    opacity: 1;
+}
+
+.forgot-pw {
+    color: #000000; 
+}
+.forgot-pw:hover{
+    color: #ffffff;
+}
+    
+
